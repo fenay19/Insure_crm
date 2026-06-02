@@ -1,93 +1,503 @@
-# insure_crm
+# Insure CRM
 
+A comprehensive Customer Relationship Management (CRM) system designed for the insurance industry. This full-stack application provides tools for managing clients, policies, claims, and business operations with an intuitive user interface and robust backend infrastructure.
 
+## 📋 Table of Contents
 
-## Getting started
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Getting Started](#getting-started)
+- [Available Scripts](#available-scripts)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## 🎯 Overview
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+**Insure CRM** is a modern, full-featured CRM platform tailored for insurance professionals. It enables efficient management of customer relationships, policy administration, claims processing, and comprehensive business analytics with real-time insights.
 
-## Add your files
+### Key Highlights
+- **Full-Stack Solution**: Separate frontend and backend for scalability
+- **Modern UI**: Built with React and Material-UI for a professional experience
+- **Real-Time Updates**: WebSocket integration via Socket.io
+- **Data Management**: Comprehensive features for managing customers, policies, and claims
+- **Multi-Format Support**: PDF, Excel, and CSV export capabilities
+- **Advanced Editor**: EditorJS integration for rich content creation
+- **Calendar Integration**: Full calendar features for scheduling and event management
+- **Authentication**: Secure JWT-based authentication with password hashing
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## 🛠 Tech Stack
+
+### Frontend
+- **Framework**: React 18.3.1 with Vite
+- **UI Library**: Material-UI (MUI) v5
+- **State Management**: Redux Toolkit + Redux Persist
+- **Form Handling**: Formik + Yup validation
+- **HTTP Client**: Axios
+- **Real-Time**: Socket.io Client
+- **Charts & Visualization**: ApexCharts
+- **Data Management**: MUI Data Grid, FullCalendar
+- **Rich Text Editor**: EditorJS + Quill
+- **File Handling**: xlsx, papaparse, html2canvas, jsPDF
+- **Routing**: React Router v6
+- **Styling**: Bootstrap, Sass, Emotion (CSS-in-JS)
+- **Build Tool**: Vite 5.2.10
+- **Node Linker**: yarn (node-modules)
+
+### Backend
+- **Runtime**: Node.js
+- **Framework**: Express.js
+- **Database**: MongoDB with Mongoose
+- **Authentication**: JWT (jsonwebtoken), Bcrypt
+- **Real-Time**: Socket.io
+- **File Processing**: Multer, pdf-parse, xlsx, csvtojson
+- **Data Validation**: Joi, express-validator
+- **Email**: Nodemailer
+- **Middleware**: CORS, compression, express-mongo-sanitize
+- **Development**: Nodemon
+- **Utilities**: Axios, moment.js, uuid, useragent
+
+## 📁 Project Structure
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/amikasoftwares06/insure_crm.git
-git branch -M main
-git push -uf origin main
+Insure_crm/
+├── frontend/                    # React frontend application
+│   ├── src/
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Page components
+│   │   ├── store/              # Redux store configuration
+│   │   ├── services/           # API and utility services
+│   │   ├── hooks/              # Custom React hooks
+│   │   ├── styles/             # Global and component styles
+│   │   └── App.jsx             # Main App component
+│   ├── .yarnrc.yml             # Yarn configuration
+│   ├── .env.qa                 # QA environment variables
+│   ├── package.json            # Frontend dependencies
+│   └── vite.config.js          # Vite configuration
+│
+├── backend/                     # Express backend application
+│   ├── src/
+│   │   ├── routes/             # API route handlers
+│   │   ├── controllers/        # Business logic
+│   │   ├── models/             # MongoDB models
+│   │   ├── middleware/         # Express middleware
+│   │   ├── services/           # Business services
+│   │   ├── utils/              # Utility functions
+│   │   └── index.js            # Server entry point
+│   ├── package.json            # Backend dependencies
+│   └── .env                    # Environment variables
+│
+└── README.md                    # This file
 ```
 
-## Integrate with your tools
+## 📦 Prerequisites
 
-- [ ] [Set up project integrations](https://gitlab.com/amikasoftwares06/insure_crm/-/settings/integrations)
+Before you begin, ensure you have the following installed on your system:
 
-## Collaborate with your team
+- **Node.js** (v14 or higher recommended)
+- **npm** or **Yarn** (package manager)
+- **MongoDB** (local or cloud instance - Atlas recommended)
+- **Git** (for version control)
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### Versions Used
+- Node.js: v14+ (recommended v16 or v18)
+- npm: v7+
+- Yarn: v1.22+ (configured with node-modules linker)
 
-## Test and Deploy
+## 🚀 Installation
 
-Use the built-in continuous integration in GitLab.
+### 1. Clone the Repository
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+```bash
+git clone https://github.com/fenay19/Insure_crm.git
+cd Insure_crm
+```
 
-***
+### 2. Frontend Setup
 
-# Editing this README
+```bash
+cd frontend
+yarn install
+# or
+npm install
+```
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+### 3. Backend Setup
 
-## Suggestions for a good README
+```bash
+cd ../backend
+npm install
+# or
+yarn install
+```
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## ⚙️ Configuration
 
-## Name
-Choose a self-explaining name for your project.
+### Frontend Configuration
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Create environment configuration files in the `frontend/` directory:
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+#### `.env` (Development)
+```env
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_SOCKET_URL=http://localhost:5000
+VITE_APP_BASE_NAME=/
+```
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+#### `.env.qa` (QA/Staging - Already Included)
+```env
+REACT_APP_VERSION=v3.0.0
+GENERATE_SOURCEMAP=false
+PUBLIC_URL=https://codedthemes.com/demos/admin-templates/materially/react/free/stage
+VITE_APP_BASE_NAME=demos/admin-templates/materially/react/free/stage
+```
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+#### `.env.production` (Production)
+```env
+REACT_APP_API_URL=https://api.yourdomain.com
+REACT_APP_SOCKET_URL=https://yourdomain.com
+VITE_APP_BASE_NAME=/
+```
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### Backend Configuration
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Create a `.env` file in the `backend/` directory:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+```env
+# Server Configuration
+PORT=5000
+NODE_ENV=development
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+# Database Configuration
+MONGODB_URI=mongodb://localhost:27017/insure_crm
+# For MongoDB Atlas:
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/insure_crm
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+# JWT Configuration
+JWT_SECRET=your_jwt_secret_key_here
+JWT_EXPIRE=7d
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+# Email Configuration
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+# CORS Configuration
+CORS_ORIGIN=http://localhost:3000
 
-## License
-For open source projects, say how it is licensed.
+# Socket.io Configuration
+SOCKET_PORT=5000
+```
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## 🎯 Getting Started
+
+### Start the Frontend Development Server
+
+```bash
+cd frontend
+yarn start
+# or
+npm start
+```
+
+The frontend will be available at `http://localhost:5173` (Vite default)
+
+### Start the Backend Development Server
+
+```bash
+cd backend
+npm start
+# or
+yarn start
+```
+
+The backend server will run on `http://localhost:5000`
+
+### Access the Application
+
+Open your browser and navigate to:
+- **Frontend**: `http://localhost:5173`
+- **Backend API**: `http://localhost:5000/api`
+
+## 📜 Available Scripts
+
+### Frontend Scripts
+
+```bash
+# Start development server
+yarn start
+npm start
+
+# Build for production
+yarn build
+npm run build
+
+# Build for QA environment
+yarn build-stage
+npm run build-stage
+
+# Preview production build
+yarn preview
+npm run preview
+
+# Run ESLint
+yarn lint
+npm run lint
+
+# Fix ESLint issues
+yarn lint:fix
+npm run lint:fix
+
+# Format code with Prettier
+yarn prettier
+npm run prettier
+```
+
+### Backend Scripts
+
+```bash
+# Start development server with auto-reload
+npm start
+
+# Production mode (without nodemon)
+node src/index.js
+```
+
+## ✨ Features
+
+### Client Management
+- Create and manage customer profiles
+- Track customer interactions and communication history
+- Store customer documents and attachments
+
+### Policy Management
+- Policy creation and lifecycle management
+- Policy renewal tracking
+- Commission calculations
+- Multi-format document export (PDF, Excel)
+
+### Claims Processing
+- Claim registration and tracking
+- Claim status updates and history
+- Document management for claims
+- Claims analytics and reporting
+
+### Communication & Collaboration
+- Real-time notifications via Socket.io
+- Email notifications and templates
+- In-app messaging system
+- Calendar integration for follow-ups and appointments
+
+### Reporting & Analytics
+- Dashboard with key metrics and KPIs
+- Advanced charts and visualizations (ApexCharts)
+- Customizable reports
+- Data export to multiple formats (PDF, Excel, CSV)
+
+### Rich Content Management
+- EditorJS integration for content creation
+- Rich text editor with formatting options
+- Document templates
+
+### Data Management
+- Bulk data import/export (CSV, Excel)
+- Data validation and sanitization
+- Audit logging for security
+
+## 🏗 Architecture
+
+### Frontend Architecture
+- **Component-Based**: Reusable React components with hooks
+- **State Management**: Redux Toolkit for global state with Redux Persist for persistence
+- **API Communication**: Axios for HTTP requests with interceptors
+- **Routing**: React Router v6 for client-side routing
+- **Real-Time**: Socket.io for real-time updates
+
+### Backend Architecture
+- **MVC Pattern**: Clear separation of concerns with controllers, models, and services
+- **RESTful API**: Standard REST endpoints for all resources
+- **Database**: MongoDB with Mongoose ODM
+- **Security**: JWT authentication, bcrypt password hashing, input validation, SQL injection prevention
+- **Middleware**: Custom middleware for auth, error handling, and validation
+- **Real-Time**: Socket.io for real-time events
+
+## 👨‍💻 Development
+
+### Code Style & Linting
+
+The project uses ESLint and Prettier for code consistency:
+
+```bash
+# Check code style
+yarn lint
+
+# Fix code style issues
+yarn lint:fix
+
+# Format code with Prettier
+yarn prettier
+```
+
+### Project Structure Best Practices
+- Keep components focused and single-responsibility
+- Use custom hooks for reusable logic
+- Organize by feature/domain rather than by file type
+- Use TypeScript-like JSDoc comments for better IDE support
+
+### Making Changes
+
+1. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+2. Make your changes and commit:
+   ```bash
+   git add .
+   git commit -m "feat: add your feature description"
+   ```
+
+3. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+4. Create a Pull Request on GitHub
+
+## 📦 Deployment
+
+### Frontend Deployment
+
+#### Build for Production
+```bash
+cd frontend
+yarn build
+```
+
+The build output will be in the `frontend/dist/` directory.
+
+#### Deploy to Netlify
+```bash
+# Install Netlify CLI
+npm install -g netlify-cli
+
+# Deploy
+netlify deploy --prod --dir=frontend/dist
+```
+
+#### Deploy to Vercel
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel
+```
+
+### Backend Deployment
+
+#### Using Docker (Optional)
+Create a `Dockerfile` in the backend directory:
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 5000
+CMD ["npm", "start"]
+```
+
+#### Deploy to Heroku
+```bash
+# Install Heroku CLI
+npm install -g heroku
+
+# Login
+heroku login
+
+# Create app
+heroku create your-app-name
+
+# Set environment variables
+heroku config:set MONGODB_URI=your_mongodb_uri
+heroku config:set JWT_SECRET=your_secret
+
+# Deploy
+git push heroku main
+```
+
+#### Deploy to AWS, Google Cloud, or DigitalOcean
+- Set up your server/container platform
+- Configure environment variables
+- Deploy the backend code
+- Set up MongoDB connection
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these guidelines:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Code Standards
+- Write clear, descriptive commit messages
+- Follow the existing code style
+- Add comments for complex logic
+- Test your changes before submitting a PR
+- Update documentation as needed
+
+## 📝 License
+
+This project is licensed under the ISC License - see the LICENSE file for details.
+
+## 📧 Contact & Support
+
+For support, feature requests, or bug reports, please:
+- Open an issue on GitHub
+- Contact the development team
+- Check existing documentation and issues first
+
+## 🎓 Learning Resources
+
+### React & Frontend
+- [React Documentation](https://react.dev)
+- [Vite Documentation](https://vitejs.dev)
+- [Material-UI Documentation](https://mui.com)
+- [Redux Toolkit Documentation](https://redux-toolkit.js.org)
+
+### Express & Backend
+- [Express.js Documentation](https://expressjs.com)
+- [MongoDB Documentation](https://docs.mongodb.com)
+- [Mongoose Documentation](https://mongoosejs.com)
+- [JWT Best Practices](https://tools.ietf.org/html/rfc7519)
+
+## 🚀 Future Enhancements
+
+Potential features for future versions:
+- Mobile app (React Native)
+- Advanced analytics and reporting dashboard
+- AI-powered customer insights
+- Multi-language support (i18n)
+- Dark mode theme
+- Progressive Web App (PWA) capabilities
+- Advanced scheduling and workflow automation
+- Integration with third-party insurance providers
+
+---
+
+**Last Updated**: June 2026
+**Version**: 3.0.0
+
+For the latest updates and information, visit the [GitHub Repository](https://github.com/fenay19/Insure_crm)
