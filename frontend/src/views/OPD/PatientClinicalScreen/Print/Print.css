@@ -1,0 +1,442 @@
+.opdPrint {
+  background: white;
+  padding: 5px;
+  min-height: 100vh;
+  max-height: auto;
+  width: 100%;
+  font-size: 10px;
+  color: black !important;
+}
+
+.opdPrintTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameLogo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.printDataSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.printDataSectionEmer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px dashed #b7b2b2;
+  padding-bottom: 10px;
+}
+
+.printDataSectionMargin {
+  margin-top: 15px;
+}
+
+.printHead {
+  width: 100%;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #eaeaea !important; /* Background color */
+  padding: 5px;
+  margin: 15px 0 5px 0;
+  -webkit-print-color-adjust: exact; /* Force background color in print for WebKit browsers */
+  print-color-adjust: exact; /* Standard property for forcing background color in print */
+}
+
+.printHead h5 {
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.printContent {
+  flex-grow: 1;
+}
+
+.printContent tr th:first-child {
+  text-align: left !important;
+}
+
+.printContent tr td:first-child {
+  text-align: left !important;
+}
+
+.printContent tr th {
+  font-size: 10px !important;
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  padding: 2px 5px !important;
+  margin: 0 !important;
+  line-height: 15px !important;
+  min-width: 100px !important;
+}
+
+.printContent tr td {
+  font-size: 9px !important;
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  min-height: 20px !important;
+  padding: 2px 5px !important;
+}
+
+.printContent .cdx-block {
+  padding: 0 !important;
+}
+
+.printContent .ce-block {
+  font-size: 14px !important;
+}
+
+.vitalMainData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.vitalData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.vitalHead {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.vitalContent {
+  display: flex;
+  flex-direction: row;
+}
+.vitalContent div {
+  text-decoration: underline !important;
+}
+
+.patientDetailMainData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.patientDetailData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 2px 12px 2px 0;
+}
+
+.patientDetailHead {
+  font-weight: bold;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+.patientDetailContent {
+  display: flex;
+  flex-direction: row;
+}
+.patientDetailContent div {
+  text-decoration: underline !important;
+}
+
+.systematicDia {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.systematicDia .diag {
+  border: 1px solid rgb(236, 236, 236);
+  margin: 2px 5px;
+  padding: 5px;
+}
+
+.sysDiaNotes {
+  width: 260px;
+}
+
+.sysDiaNotesLast {
+  width: 260px;
+}
+
+.diag:nth-child(odd) .sysDiaNotesLast {
+  width: 542px;
+}
+
+.printContent h5 {
+  text-decoration: underline;
+}
+
+.printContent .MuiCheckbox-root {
+  padding: 0 1px 0 3px !important;
+}
+
+.printContent .MuiSvgIcon-root {
+  font-size: 12px !important;
+}
+
+.examData {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.examData .selectOptionExam {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.systematicNotes {
+  margin: -10px 20px 0 20px;
+  text-decoration: underline;
+}
+
+.systematicDiagram {
+  margin: 5px 20px 0 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  width: fit-content;
+}
+
+.otherMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.otherMain h6 {
+  margin: 0 5px 0 10px;
+}
+.otherNote {
+  text-decoration: underline;
+}
+
+.selectHistoryData {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.selectHistoryData span {
+  text-decoration: underline;
+}
+
+.subSectionPrint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.subSectionPrint h5,
+.subSectionPrintColumn h5 {
+  margin-right: 5px;
+}
+
+.subSectionPrintColumn {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.otherHistoryPrint {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.blankDataPrint {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.goog-te-gadget img {
+  display: none !important;
+}
+
+.languagePrint {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#getOPDPrint button {
+  font-size: 12px;
+  padding: 2px 5px !important;
+}
+#getOPDPrint svg {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.editorPrint {
+  border: 1px solid rgb(202, 200, 200);
+  padding-bottom: 10px;
+}
+.vitalData .MuiTypography-root {
+  font-size: 10px !important;
+}
+
+.printDiagnosticsCbc {
+  width: 70px;
+}
+.printDiagnosticsCbc .cbcName1 {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.printDiagnosticsCbc .cbcName2 {
+  float: left;
+  width: 50%;
+  padding: 5px 5px 5px 0;
+  text-align: left;
+  cursor: pointer;
+}
+.printDiagnosticsCbc .cbcName3 {
+  float: left;
+  width: 50%;
+  padding: 5px 0 5px 5px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.printDiagnosticsGlu {
+  width: 190px;
+  margin-top: 10px;
+}
+
+.printDiagnosticsGlu .gluName1 {
+  float: left;
+  width: 24%;
+  padding: 8px 0;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.printDiagnosticsGlu .gluName3 {
+  float: left;
+  width: 24%;
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.printDiagnosticsGlu .gluName4 {
+  float: left;
+  width: 26%;
+  padding: 6px 0 12px 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.printDiagnosticsGlu .gluName6 {
+  float: left;
+  width: 24%;
+  padding: 10px 8px 8px 8px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid black;
+  margin-top: -25px;
+}
+
+.printDiagnosticsGlu .gluName8 {
+  float: left;
+  width: 24%;
+  padding: 10px 8px 8px 8px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: -25px;
+}
+
+.printDiagnosisTest .MuiFormControlLabel-root {
+  margin-left: -25px !important;
+}
+
+.printtextHistory {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.printtextHistory .MuiInputBase-input {
+  padding: 0 !important;
+}
+
+.printtextHistory label {
+  margin-right: 5px !important;
+  font-weight: bold !important;
+  white-space: nowrap !important;
+}
+
+.printtextHistory .MuiCheckbox-root {
+  padding: 5px 0 !important;
+  margin-left: -3px !important;
+}
+
+.printDiagnosticColor {
+  color: rgb(179, 176, 176);
+  font-weight: bold;
+}
+
+.printDiagnosticColorActive {
+  color: black;
+  font-weight: bold;
+}
+
+#emerPrint {
+  display: flex;
+  justify-content: flex-end;
+}
+#emerPrint button {
+  font-size: 12px;
+  padding: 2px 5px !important;
+}
+#emerPrint svg {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Custom CSS */
+@media print {
+  .skiptranslate,
+  #getOPDPrint {
+    display: none; /* Hide the element by default when printing */
+  }
+  #emerPrint {
+    display: none; /* Hide the element by default when printing */
+  }
+  #bodyId {
+    top: 0 !important;
+  }
+}

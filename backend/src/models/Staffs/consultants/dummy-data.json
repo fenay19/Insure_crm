@@ -1,0 +1,119 @@
+{
+    "step": "basicDetails",
+    "data" : {
+        "basicDetails": {
+            "firstName": "Medha",
+            "middleName": "Suresh",
+            "lastName": "Umredkar",
+            "gender": "female",
+            "fatherName": "Suresh",
+            "mobile": "8794561229",
+            "alternateMobile": "",
+            "email": "medha@gmal.com",
+            "alternateEmail": "",
+            "aadhar": "111111111111",
+            "staffType": "Consultant",
+            "dateOfJoining": "2023-12-20T00:00:00.000Z"
+        }
+    }
+}
+
+{
+    "step": "addressDetails",
+    "doctorId": "656d992158cd71fb7fbc3d7f",
+    "data": {
+        "addressDetails": {
+            "address": "d",
+            "pincode": "1",
+            "city": "d",
+            "district": "d",
+            "state": "d",
+            "country": "d",
+            "permanentAddress": "",
+            "permanentPincode": "",
+            "permanentCity": "",
+            "permanentDistrict": "",
+            "permanentState": "",
+            "permanentCountry": ""
+        }
+    }
+    
+}
+
+
+{   
+    "step": "educationalDetails",
+    "doctorId": "6577ef321b5f1554dc31655e",
+    "data": {
+        "educationalDetails": {
+            "SSC": {
+                "degree": "test",
+                "institute": "demo",
+                "year": "2023",
+                "CGPA": "10.0"
+            },
+            "HSC": {
+                "degree": "test",
+                "institute": "demo",
+                "year": "2023",
+                "CGPA": "10.0"
+            },
+            "graduation": {
+                "degree": "test",
+                "institute": "demo",
+                "year": "2023",
+                "CGPA": "10.0"
+            },
+            "postGraduation": {
+                "degree": "test",
+                "institute": "demo",
+                "year": "2023",
+                "CGPA": "10.0"
+            },
+            "other": {
+                "degree": "test",
+                "institute": "demo",
+                "year": "2023",
+                "CGPA": "10.0"
+            }
+        }
+    }
+}
+
+
+{   
+    "step": "bankingDetails",
+    "doctorId": "6577ef321b5f1554dc31655e",
+    "data":{
+        "bankingDetails": {
+            "accountNumber": "682483768325626",
+            "bankName": "State Bank of India",
+            "branchName": "Nandanwan",
+            "ifscCode": "SBIN001111",
+            "panNumber": "EBYFH3896E",
+            "accountHolderName": "Test person"
+        }
+    }
+}
+
+{
+    "step": "documents",
+    "doctorId": "6577ef321b5f1554dc31655e",
+    "data": {
+        "documents": {
+            "aadharCard": "avtar1.jpg",
+            "panCard": "avtar1.jpg",
+            "passport": "avtar1.jpg",
+            "bank": "avtar1.jpg",
+            "photo": "avtar1.jpg",
+            "joining": "avtar1.jpg",
+            "revealing": "avtar1.jpg",
+            "SSC": "avtar1.jpg",
+            "HSC": "avtar1.jpg",
+            "graduation": "avtar1.jpg",
+            "postGraduation": "avtar1.jpg",
+            "other": "avtar1.jpg"
+        }
+    }
+}
+

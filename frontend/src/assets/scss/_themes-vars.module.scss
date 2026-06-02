@@ -1,0 +1,107 @@
+$primary:#007c9eec;
+//$primary:#000000d7;
+$primary100: #08d0af;
+
+$primaryDark: #0567a4;
+$primaryLight: #0ac2eb;
+
+$secondary: #425466;
+$secondaryDark: #272f33;
+$secondaryLight: #60696d;
+
+$error: #ff2c19e1;
+$errorDark: #cf1100;
+$errorLight: #ec4333;
+
+$warning: #f4a100;
+$warningDark: #aa7000;
+$warningLight: #f6b333;
+
+$info: #d0a908;
+$infoDark: #937706;
+$infoLight: #eabd0a;
+
+$success: #1ac662;
+$successDark: #007849;
+$successLight: #33bc87;
+
+$grey300: #425466;
+$dark: #343a40;
+
+$bg100: #f8f8f9;
+
+// Text Colors
+$textPrimary: #242c3a;
+$textSecondary: #1b212c;
+$textDark: #12171e;
+$textHint: #00000061;
+
+// Text Dark Color
+$textDarkPrimary: #bbc0c7;
+$textDarkSecondary: #babfc9;
+$textDarkDark: #fff;
+$texDarkHint: #94919161;
+
+// Background Color
+$background: #f0f2f8;
+$backgoundDark: #181e2b;
+
+// Paper Color
+$paper: #ffffff;
+$paperDark: #232b38;
+
+$menuHover: #dadada;
+
+// this will use in javascript
+:export {
+  primary: $primary;
+  primaryDark: $primaryDark;
+  primaryLight: $primaryLight;
+  primary100: $primary100;
+
+  secondary: $secondary;
+  secondaryDark: $secondaryDark;
+  secondaryDark: $secondaryDark;
+
+  error: $error;
+  errorDark: $errorDark;
+  errorLight: $errorLight;
+
+  warning: $warning;
+  warningDark: $warningDark;
+  warningLight: $warningLight;
+
+  info: $info;
+  infoDark: $infoDark;
+  infoLight: $infoLight;
+
+  success: $success;
+  successDark: $successDark;
+  successLight: $successLight;
+
+  grey300: $grey300;
+
+  bg100: $bg100;
+
+  // Text Colors
+  textPrimary: $textPrimary;
+  textSecondary: $textSecondary;
+  textDark: $textDark;
+  textHint: $textHint;
+
+  // Text Dark Colors
+  textDarkPrimary: $textDarkPrimary;
+  textDarkSecondary: $textDarkSecondary;
+  textDarkDark: $textDarkDark;
+  textDarkHint: $texDarkHint;
+
+  // Background Color
+  background: $background;
+  backgoundDark: $backgoundDark;
+
+  // Paper Color
+  paper: $paper;
+  paperDark: $paperDark;
+  menuHover: $menuHover;
+
+}

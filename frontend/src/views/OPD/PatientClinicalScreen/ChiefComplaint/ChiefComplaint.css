@@ -1,0 +1,37 @@
+.chiefA:hover {
+  border: 2px solid #056410;
+  margin: 5px;
+  background-color: #058d15;
+  color: white;
+}
+
+.selectProblemActive {
+  background-color: white;
+  color: black;
+}
+
+.withChiefC {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: "100%";
+  
+}
+
+.withComplaintS {
+  min-height: fit-content;
+  max-height: 190px;
+  overflow: auto;
+}
+
+.chiefBtn {
+  font-size: 0.8125rem;
+  height: 32px;
+}
+.labelChief {
+  width: fit-content;
+  margin-right: 10px;
+  font-weight: 500;
+}

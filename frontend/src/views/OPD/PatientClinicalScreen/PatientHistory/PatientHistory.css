@@ -1,0 +1,307 @@
+.opdPatientHistory {
+  background: white;
+  padding: 5px;
+  min-height: 100vh;
+  max-height: fit-content;
+  width: 100%;
+  font-size: 14px;
+  color: black !important;
+}
+
+.opdPatientHistoryTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameLogo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.PatientHistoryDataSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.PatientHistoryDataSectionEnd {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.PatientHistoryDataSectionMargin {
+  margin-top: 15px;
+}
+
+/* .PatientHistoryHead {
+  margin-right: 5px;
+  width: fit-content;
+  white-space: nowrap;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #09818f;
+} */
+
+.PatientHistoryHead {
+  width: 100%;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #eaeaea;
+  padding: 5px;
+  margin:15px 0 5px 0
+}
+
+.PatientHistoryHead h5{
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.PatientHistoryContent {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.PatientHistoryContent tr th:first-child {
+  text-align: left !important;
+}
+
+.PatientHistoryContent tr td:first-child {
+  text-align: left !important;
+}
+
+.PatientHistoryContent tr th {
+  font-size: 14px !important;
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  padding: 5px 7px !important;
+  margin: 0 !important;
+  line-height: 15px !important;
+  min-width: 100px !important;
+}
+
+.PatientHistoryContent tr td {
+  font-size: 13px !important;
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  min-height: 20px !important;
+  padding: 5px 7px !important;
+}
+
+.vitalMainData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.vitalData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.vitalHead {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.vitalContent {
+  display: flex;
+  flex-direction: row;
+}
+.vitalContent div {
+  text-decoration: underline !important;
+}
+
+.patientDetailMainData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.patientDetailData {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 2px 12px 2px 0;
+}
+
+.patientDetailHead {
+  font-weight: bold;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+.patientDetailContent {
+  display: flex;
+  flex-direction: row;
+}
+.patientDetailContent div {
+  text-decoration: underline !important;
+}
+
+.systematicDia {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.systematicDia .diag {
+  border: 1px solid rgb(236, 236, 236);
+  margin: 2px 5px;
+  padding: 5px;
+}
+
+.sysDiaNotesp {
+  width: 300px;
+}
+
+.sysDiaNotesLastp {
+  width: 300px;
+}
+
+.diag:nth-child(n + 5):nth-child(even) .sysDiaNotesLastp,
+.diag:first-child .sysDiaNotesLastp {
+  width: 100%;
+}
+
+.PatientHistoryContent h5 {
+  text-decoration: underline;
+}
+
+.PatientHistoryContent .MuiCheckbox-root {
+  padding: 0 1px 0 3px !important;
+}
+
+.PatientHistoryContent .MuiSvgIcon-root {
+  font-size: 15px !important;
+}
+
+.examData {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.examData .selectOptionExam {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.systematicNotes {
+  margin: 0 20px 0 10px;
+  text-decoration: underline;
+}
+
+.otherMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.otherMain h6 {
+  margin: 0 5px 0 10px;
+}
+.otherNote {
+  text-decoration: underline;
+}
+
+.selectHistoryData {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.selectHistoryData span {
+  text-decoration: underline;
+}
+
+.subSectionPatientHistory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.subSectionPatientHistory h5,
+.subSectionPatientHistoryColumn h5 {
+  margin-right: 5px;
+}
+
+.subSectionPatientHistoryColumn {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+
+.otherHistoryPatientHistory {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.blankDataPatientHistory {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+
+.historyDate {
+  display: flex;
+  align-items: center;
+  font-size: 20px !important;
+  color: blue;
+}
+
+.historyDate img {
+  transform: rotate(180deg);
+  width: 35px;
+  margin-right: 8px;
+}
+
+.historyDate .historyDateD {
+  text-decoration: underline;
+}
+
+.historyDate span {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.historyHR {
+  border-top-width: 3px !important;
+  margin-top: 10px !important;
+  border-color: #15a6b6 !important;
+}
+
+.patientHistorySection {
+  padding: 10px 25px 10px 0px;
+}
+.systematicNotes {
+  margin: -10px 20px 0 20px;
+  text-decoration: underline;
+}
+
+.systematicDiagram {
+  margin: 5px 20px 0 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(207, 207, 207);
+  width: fit-content;
+}

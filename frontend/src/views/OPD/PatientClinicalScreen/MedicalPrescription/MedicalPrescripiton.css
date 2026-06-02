@@ -1,0 +1,361 @@
+.tabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.medicineDose {
+  width: 98%;
+}
+
+.Tablet {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.Tablet h4 {
+  background-color: #c2eef1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 8px 10px 5px 10px;
+}
+
+.TabDose {
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  border: 1px solid #c2eef1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.TabDose .fixedDose {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TabDose .tab {
+  background: linear-gradient(white, rgb(247, 247, 247));
+  margin: 5px;
+  padding: 7px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 5px gray;
+  width: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.TabDose .tab:hover,
+.TabDose .tabActive {
+  /* background: linear-gradient(rgb(247, 247, 247), rgb(207, 207, 207)); */
+  background: linear-gradient(rgb(230, 230, 230), rgb(175, 172, 172));
+
+  margin: 5px;
+  padding: 7px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 5px gray;
+  width: 35px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.Tablet .MuiInputBase-input-MuiOutlinedInput-input,
+.Timing .MuiInputBase-input-MuiOutlinedInput-input {
+  width: 40px !important;
+}
+
+.Timing {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.Timing h4 {
+  background-color: #c2eef1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 8px 10px 5px 10px;
+}
+
+.MedTiming {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+
+.MedTime {
+  border: 2px solid #b2d9db;
+  color: rgb(136, 135, 135);
+  padding: 10px 0;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.MedTime:hover,
+.MedTimeActive {
+  /* background: linear-gradient(rgb(230, 230, 230), rgb(175, 172, 172)); */
+  background: linear-gradient(rgb(207, 207, 207), rgb(247, 247, 247), rgb(207, 207, 207));
+  border: 2px solid #b2d9db;
+  color: rgb(136, 135, 135);
+  padding: 10px 0;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.glassPres {
+  border: 1px solid #000000;
+  color: black;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+  height: 35px;
+}
+
+.glassPresActive {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #b2d9db;
+  color: black;
+  padding: 5px 0;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  flex: 1;
+}
+
+.inputDose .MuiFormControl-root,
+.inputMedTime .MuiFormControl-root {
+  min-width: 40px !important;
+}
+
+.inputMedTime .MuiFormControl-root-MuiTextField-root,
+.inputMedTime .MuiInputBase-input,
+.inputMedTime .MuiInputBase-root-MuiOutlinedInput-root,
+.inputDose .MuiInputBase-root-MuiOutlinedInput-root,
+.inputDose .MuiFormControl-root-MuiTextField-root,
+.inputDose .MuiInputBase-input {
+  padding: 10px 0 !important;
+  margin: 0 !important;
+  width: 40px !important;
+  border: 2px solid #b2d9db !important;
+  color: rgb(136, 135, 135) !important;
+  padding: 10px 5px !important;
+  font-size: 13px !important;
+}
+
+.medNotes {
+  margin-top: 20px;
+}
+
+.newPres {
+  height: 100%;
+}
+
+.newPres .MuiChip-avatar {
+  margin: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  color: inherit !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  text-transform: uppercase !important;
+  border-right: 1px solid rgb(226, 226, 226) !important;
+}
+
+.old_select_medicine_show {
+  padding: 15px 0;
+  max-height: 100%;
+  min-height: fit-content;
+  overflow: auto;
+}
+
+.old_select_medicine_show tr > th {
+  background-color: #a8e0e4 !important;
+  color: black !important;
+  padding: 5px 0;
+}
+
+.old_select_medicine_show tr > td {
+  color: black !important;
+  padding: 3px 0 !important;
+}
+
+.old_select_medicine_show tr:hover,
+.oldPresActive {
+  background-color: #eafafa !important;
+  color: black !important;
+  padding: 3px 0 !important;
+}
+
+.submitDose {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 10px 10px 0;
+}
+
+.oldPresTab {
+  box-shadow: 2px 2px 4px 2px rgb(226, 237, 248);
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 5px 7px;
+  width: auto;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.oldPresTab:hover {
+  background: rgb(245, 249, 252);
+  box-shadow: 2px 2px 4px 2px rgb(226, 237, 245);
+}
+
+.oldPresTab .tabname {
+  color: rgb(6, 6, 204);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.oldPresTabActive {
+  box-shadow: 2px 2px 4px 2px rgb(14, 78, 143);
+  border-radius: 10px;
+  background: rgb(32, 32, 216);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 5px 7px;
+  width: auto;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.oldPresTabActive:hover {
+  box-shadow: 2px 2px 4px 2px rgb(14, 78, 143);
+  background: rgb(2, 2, 196);
+}
+
+.oldPresTabActive .tabname {
+  color: rgb(210, 210, 250);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.oldPresTab .presDetail span {
+  margin-right: 2px;
+  font-size: 12.5px;
+  color: rgb(116, 116, 116);
+  font-weight: 600;
+}
+
+.presDetail {
+  margin-left: 10px;
+}
+
+.presDetailActive {
+  margin-left: 10px;
+}
+
+.presDetailActive span {
+  margin-right: 2px;
+  font-size: 12.5px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.oldPresMedicine {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.submitPresMedicine {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-left: -10px !important;
+  margin-top: -5px;
+  width: inherit;
+}
+
+.finalMed {
+  border-bottom: 1px dashed rgb(226, 237, 248);
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 5px 7px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.finalMed:hover {
+  background: rgb(245, 249, 252);
+}
+
+.finalMed:hover .MuiIconButton-root,
+.finalMedSelected:hover .MuiIconButton-root {
+  color: rgb(255, 255, 255) !important;
+  background: blue !important;
+}
+
+.finalMedSelected {
+  background: #86f06c;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 5px 0 5px 7px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.finalMedSelected:hover {
+  background: rgb(126, 230, 100);
+}
+
+.finalMed .tabname,
+.finalMedSelected .tabname {
+  color: rgb(6, 6, 204);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.finalMed .presDetail span {
+  margin-right: 2px;
+  font-size: 12.5px;
+  color: rgb(116, 116, 116);
+  font-weight: 600;
+}
+
+.finalMedSelected .presDetail span {
+  margin-right: 2px;
+  font-size: 12.5px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.finalMedSelected .MuiIconButton-root {
+  padding: 0 2px !important;
+  margin-left: 10px !important;
+}
+
+.finalMed .MuiIconButton-root {
+  padding: 0 2px !important;
+  margin-left: 10px !important;
+}

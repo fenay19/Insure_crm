@@ -1,0 +1,161 @@
+.medicalHistory {
+  padding: 20px;
+  max-height: 105vh;
+  min-height: fit-content;
+}
+
+.stepperHistory {
+  border-right: 1px solid #e6e5e5;
+  box-shadow: 15px 0px 10px -15px #b6b2b2;
+  min-height: fit-content;
+  max-height: 100%;
+}
+
+.historyDetail {
+  padding-left: 5px;
+  min-height: fit-content;
+  max-height: 100%;
+}
+
+.historyDetail .heading {
+  color: #0e9faf;
+  text-decoration: underline;
+}
+
+.historyDetail .catQue {
+  margin-top: 10px;
+  margin-bottom: -5px !important;
+  font-weight: bold;
+}
+
+.ptHistory {
+  margin-left: -12px !important;
+  margin-right: -5px !important;
+}
+
+.allergyChip {
+  margin: 10px 0;
+}
+
+.sinceFormat {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nextPreBtn .MuiButton-root {
+  min-width: 30px !important;
+  height: 30px !important;
+}
+
+.NextBtn {
+  background: #11b0c2 !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 5px !important;
+}
+
+.NextBtn:hover {
+  background: #0e9faf !important;
+}
+
+.PreviousBtn {
+  background: #f7f6f6 !important;
+  color: #11b0c2 !important;
+  border: 1px solid #dfdfdf !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 5px !important;
+}
+
+.paticularSection .MuiStepContent-root {
+  padding-left: 5px !important;
+}
+
+.PreviousBtn:hover {
+  background: #dfdfdf !important;
+}
+
+.nextPreBtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.MuiStepIcon-root.Mui-active {
+  color: #0e9faf !important;
+}
+
+.Mui-completed {
+  color: #11b0c2 !important;
+}
+
+.addQue {
+  margin-bottom: 10px;
+  background: #11b0c2 !important;
+  color: white !important;
+}
+
+.btnAndQue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnAndQue h2 {
+  margin-right: 20px;
+}
+
+.searchAddBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.searchAddBtn button {
+  margin-left: 10px;
+}
+
+.detailHistory {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  line-height: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  border-bottom: 1px dashed rgb(226, 237, 248);
+  margin: 5px 0;
+}
+
+.innerdetailHistory{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  /* border-bottom: 1px dashed rgb(226, 237, 248); */
+  margin-top: -5px;
+}
+
+.detailHistory .head {
+  color: blue;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.paticularSection .MuiStepLabel-root:hover,
+.paticularSection .MuiStepLabel-root.Mui-disabled:hover {
+  cursor: pointer !important;
+}
+.paticularSection .MuiStepLabel-root:hover .MuiStepLabel-label,
+.paticularSection .MuiStepLabel-root:hover .MuiSvgIcon-root-MuiStepIcon-root {
+  color: blue !important;
+}
+
+
+.selectedHistory{
+  background-color:  #3AA3BA;
+  color: #fff;
+}

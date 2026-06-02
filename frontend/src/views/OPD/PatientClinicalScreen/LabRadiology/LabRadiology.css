@@ -1,0 +1,35 @@
+.labMenuParent {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  background: #ececec;
+  color: black;
+  padding: 5px 0;
+  border-right: 1px solid #e6e5e5;
+  box-shadow: 15px 0px 10px -15px #b6b2b2;
+  margin-left: -15px !important;
+}
+
+.labMenu {
+  padding: 2px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 2px 2px 0 5px ;
+  font-size: 15px;
+}
+
+.labMenu svg{
+  width: 20px !important;
+  height: 20px !important
+}
+
+.labMenu:hover,
+.labMenuActive {
+  background-color: white;
+}
+
+.specimenName {
+  text-align: center;
+  color: #056a75;
+}

@@ -1,0 +1,23 @@
+.allMenu {
+  display: flex;
+  flex-direction: column;
+}
+.patientAllMenuData {
+  border-bottom: 1px solid #e6e5e5;
+  padding: 10px 0 20px 0;
+}
+
+.allMenu h3 {
+  justify-content: flex-start;
+  padding: 10px;
+  color: #0e9faf;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+
+.personalDetail{
+  padding: 10px;
+}
