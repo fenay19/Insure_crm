@@ -168,34 +168,19 @@ VITE_APP_BASE_NAME=/
 
 ### Backend Configuration
 
-Create a `.env` file in the `backend/` directory:
+Create a `.env` file in the root directory and add the following variables:
 
 ```env
-# Server Configuration
 PORT=5000
 NODE_ENV=development
-
-# Database Configuration
-MONGODB_URI=mongodb://localhost:27017/insure_crm
-# For MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/insure_crm
-
-# JWT Configuration
-JWT_SECRET=your_jwt_secret_key_here
-JWT_EXPIRE=7d
-
-# Email Configuration
+MONGODB_URI=<your_mongodb_connection_string>
+JWT_SECRET=<your_jwt_secret>
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=your_email@gmail.com
-SMTP_PASS=your_app_password
-
-# CORS Configuration
+SMTP_USER=<your_email>
+SMTP_PASS=<your_app_password>
 CORS_ORIGIN=http://localhost:3000
-
-# Socket.io Configuration
 SOCKET_PORT=5000
-```
 
 ## 🎯 Getting Started
 
